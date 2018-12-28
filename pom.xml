@@ -14,13 +14,20 @@
         <module>starlight-web</module>
         <module>starlight-starter</module>
         <module>starlight-jwt</module>
+        <module>starlight-blog</module>
+        <module>starlight-java-test</module>
+        <module>starlight-orm</module>
     </modules>
 
     <properties>
         <lombok.version>1.18.4</lombok.version>
-        <springboot.version>2.0.0.RELEASE</springboot.version>
+        <springboot.version>2.0.1.RELEASE</springboot.version>
         <orika.version>1.5.2</orika.version>
         <jodatime.version>2.10.1</jodatime.version>
+        <commons.lang.version>3.8.1</commons.lang.version>
+        <mybatis-plus-boot-starter.version>3.0.2</mybatis-plus-boot-starter.version>
+        <hikaricp.version>3.2.0</hikaricp.version>
+        <mysql.version>8.0.13</mysql.version>
     </properties>
 
     <dependencyManagement>
@@ -57,6 +64,30 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${jodatime.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>${hikaricp.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

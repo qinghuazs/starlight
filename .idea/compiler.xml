@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="starlight-blog" />
         <module name="starlight-common" />
+        <module name="starlight-java-test" />
         <module name="starlight-jwt" />
+        <module name="starlight-orm" />
         <module name="starlight-service" />
         <module name="starlight-starter" />
         <module name="starlight-web" />
