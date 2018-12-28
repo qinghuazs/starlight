@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="starlight" />
+        <module name="starlight-common" />
+        <module name="starlight-service" />
+        <module name="starlight-starter" />
+        <module name="starlight-web" />
       </profile>
     </annotationProcessing>
   </component>

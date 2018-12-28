@@ -6,7 +6,50 @@
 
     <groupId>com.qinghuazs</groupId>
     <artifactId>starlight</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>starlight-common</module>
+        <module>starlight-service</module>
+        <module>starlight-web</module>
+        <module>starlight-starter</module>
+    </modules>
 
+    <properties>
+        <lombok.version>1.18.4</lombok.version>
+        <springboot.version>2.0.0.RELEASE</springboot.version>
+        <orika.version>1.5.2</orika.version>
+    </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ma.glasnost.orika</groupId>
+                <artifactId>orika-core</artifactId>
+                <version>${orika.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
