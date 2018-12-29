@@ -31,6 +31,10 @@ public class WebResponse {
         return WebResponse.builder().code("-1").msg("请求失败").build();
     }
 
+    public static WebResponse fail(String msg) {
+        return WebResponse.builder().code("-1").msg(msg).build();
+    }
+
     public static WebResponse fail(Object data) {
         return WebResponse.builder().code("-1").msg("请求失败").data(data).build();
     }
