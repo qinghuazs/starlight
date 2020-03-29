@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 public class UserBo {
 
     private long id;
-    @NotNull(message = "用户名不能为空") @Length(min = 2, max = 64)
+    @NotEmpty(message = "用户名不能为空") @Length(min = 2, max = 64)
     private String username;
     private String password;
     private String realname;

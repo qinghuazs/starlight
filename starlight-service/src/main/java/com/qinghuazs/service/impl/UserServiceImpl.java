@@ -1,5 +1,6 @@
 package com.qinghuazs.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.qinghuazs.bo.UserBo;
 import com.qinghuazs.entity.User;
@@ -10,6 +11,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Slf4j
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
@@ -19,5 +22,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         User user = Orika.map(userBo, User.class);
         this.save(user);
         return user;
+    }
+
+    public List<User> getAllUser() {
+        QueryWrapper<User> wrapper = new QueryWrapper();
+        return list(wrapper);
     }
 }

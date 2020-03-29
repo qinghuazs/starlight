@@ -58,7 +58,7 @@ public class GlobalExceptionHandler {
          * 系统内部异常，打印异常栈
          */
         log.error("Error: handleBadRequest StackTrace : {}", e);
-        return WebResponse.fail();
+        return WebResponse.fail(e);
     }
 }
 
