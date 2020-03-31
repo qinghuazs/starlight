@@ -13,8 +13,6 @@
         <module>starlight-service</module>
         <module>starlight-web</module>
         <module>starlight-starter</module>
-        <module>starlight-jwt</module>
-        <module>starlight-blog</module>
         <module>starlight-java-test</module>
         <module>starlight-orm</module>
         <module>starlight-aliyun</module>
