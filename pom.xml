@@ -20,7 +20,7 @@
 
     <properties>
         <lombok.version>1.18.4</lombok.version>
-        <springboot.version>2.0.1.RELEASE</springboot.version>
+        <springboot.version>2.5.12</springboot.version>
         <orika.version>1.5.2</orika.version>
         <jodatime.version>2.10.1</jodatime.version>
         <commons.lang.version>3.8.1</commons.lang.version>
