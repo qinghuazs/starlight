@@ -26,7 +26,7 @@
         <commons.lang.version>3.8.1</commons.lang.version>
         <mybatis-plus-boot-starter.version>3.0.2</mybatis-plus-boot-starter.version>
         <hikaricp.version>3.2.0</hikaricp.version>
-        <mysql.version>8.0.13</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
     </properties>
 
     <dependencyManagement>
